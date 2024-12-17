@@ -1,0 +1,25 @@
+.header {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .logout {
+      background-color: #dc3545;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+  

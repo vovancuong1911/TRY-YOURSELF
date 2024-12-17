@@ -1,0 +1,66 @@
+/* Nút mở Contact Us */
+.contact-button {
+    position: fixed;
+    top: 10%;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  /* Bảng thông tin liên hệ */
+  .contact-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+  
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #333;
+      cursor: pointer;
+  
+      &:hover {
+        color: red;
+      }
+    }
+  
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+      font-size: 1rem;
+      color: #555;
+  
+      svg {
+        color: #007bff;
+      }
+    }
+  }
+  

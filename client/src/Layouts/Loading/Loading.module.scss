@@ -1,0 +1,52 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; // Hiển thị trên các phần khác
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.7); // Màu nền mờ
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .img-loading {
+      width: 80px; // Kích thước hình ảnh loading
+      height: auto;
+      animation: spin 1.5s infinite linear; // Hiệu ứng xoay
+    }
+  }
+  
+  .test {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
